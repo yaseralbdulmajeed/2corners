@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap');
+
+:root {
+    --orange:#f37927c5;
+    --primary: #0d6efd;
+    --dark: #21252f;
+    --body: #888;
+    --white: #ffffff;
+    --box-shadow: 0 8px 22px rgba(218, 98, 19, 0.15);
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    line-height: 1.7;
+    color: var(--body);
+}
+
+h1,h2,h3,h4,h5,h6,
+.display-4 {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* Navbar */
+.navbar{
+   
+    box-shadow: var(--box-shadow);
+    --bs-navbar-nav-link-padding-x: 1.5rem;
+    
+}
+
+.close-navbar-toggler{
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  z-index:1;
+  cursor:pointer;
+}
+
+.close-navbar-toggler.collapsed{
+    z-index:-1;
+}
+
+.navbar .navbar-nav .nav-link:hover{
+    color:#f37a27
+}
+
+ .navbar .logo {
+    width: 100px;
+}
+
+.navbar .nav-link {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.navbar .nav-link.active {
+    color: var(--orange) !important;
+}
+
+.btn {
+    padding: 14px 18px;
+    border-width: 2px;
+    border-radius: 0;
+}
+
+.hero {
+    background-image: url(../images/Hero.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+.hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(207, 124, 69, 0.75);
+    z-index: -1;
+}
+
+.col-img {
+    background-image: url(../images/About_Clean.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.col-img1 {
+    background-image: url(../images/About_Valuation1.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.card-effect {
+    box-shadow: var(--box-shadow);
+    background-color: var(--white);
+    padding: 25px;
+    transition: all 0.35s ease;
+}
+
+.card-effect:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.iconbox {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 32px;
+    border-radius: 100px;
+    flex: none;
+}
+
+
+.service {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.service::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    background-color: var(--orange);
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+
+.service:hover .iconbox {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.service:hover h5,
+.service:hover p {
+    color: var(--white);;
+}
+
+.service:hover::after {
+    opacity: 1;
+    top: 0;
+}
+
+.valuation {
+    background-image: url(../images/Valuation.jpg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+.valuation::after {
+    content: "";
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: -1;
+}
+
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+}
+
+
+
+form input.form-control {
+    height: 56px;
+}
+/* Contact */
+#contact .form-control {
+    background-color: transparent;
+    border: 1px solid#f37a27;
+    border-radius: 1; 
+    padding: 10px;
+    color: rgb(0, 0, 0);
+}
+
+
+/* Footer */
+footer {
+    background: url(../images/Footer2Corner.jpg);
+    padding-top: 120px;
+    padding-bottom: 30px;
+    
+    
+}
+
+.footer-top {
+    margin-bottom: 30px;
+} 
+
+footer p,
+footer a{
+    color: rgba(255, 255, 255, 0.75);
+}
+
+footer .social-links a {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+footer img {
+    max-width: 175px;
+   
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+} 
