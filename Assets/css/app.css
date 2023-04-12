@@ -83,6 +83,7 @@ img {
     background-attachment: fixed;
     position: relative;
     z-index: 2;
+    -webkit-background-attachment: fixed; /* Safari iOS compatibility */
 }
 
 .hero::after {
@@ -183,6 +184,7 @@ section {
     background-attachment: fixed;
     position: relative;
     z-index: 2;
+    -webkit-background-attachment: fixed; /* Safari iOS compatibility */
 }
 
 .valuation::after {
