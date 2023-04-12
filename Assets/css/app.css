@@ -77,13 +77,16 @@ img {
 
 .hero {
     background-image: url(../images/Hero.jpg);
+    -webkit-background-position: center; /* Safari iOS compatibility */
     background-position: center;
+    -webkit-background-size: contain; /* Safari iOS compatibility */
     background-size: contain;
     background-repeat: no-repeat;
+    -webkit-background-attachment: fixed; /* Safari iOS compatibility */
     background-attachment: fixed;
     position: relative;
     z-index: 2;
-    -webkit-background-attachment: fixed; /* Safari iOS compatibility */
+   
 }
 
 .hero::after {
@@ -178,13 +181,15 @@ section {
 
 .valuation {
     background-image: url(../images/Valuation.jpg);
+    -webkit-background-position: center; /* Safari iOS compatibility */
     background-position: center;
+    -webkit-background-size: contain; /* Safari iOS compatibility */
     background-size: contain;
     background-repeat: no-repeat;
+    -webkit-background-attachment: fixed; /* Safari iOS compatibility */
     background-attachment: fixed;
     position: relative;
     z-index: 2;
-    -webkit-background-attachment: fixed; /* Safari iOS compatibility */
 }
 
 .valuation::after {
